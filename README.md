@@ -1,6 +1,8 @@
 # mesh_landmarking
 A tool for landmarking a 3D mesh written in Python.
 
+https://github.com/user-attachments/assets/47768b1e-43e7-4677-80ce-36d77c0e704e
+
 ## Usage
 
 `python mesh_landmarking.py <path to mesh> <path to landmarks> -nl <max number of landmarks (default inf)> <-b to store the landmarks as barycentric>`
