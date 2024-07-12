@@ -96,8 +96,8 @@ class Manager:
         self.plotter.set_icon('mesh_landmarking.jpg')
 
         self.plotter.iren.picker = 'world'
-        self.plotter.background_color = 'w'
-        self.actor = self.plotter.add_mesh(self.pv_mesh, show_edges=False, edge_color='black')
+        self.plotter.background_color = '#0D1017'
+        self.actor = self.plotter.add_mesh(self.pv_mesh, color=(0.5,0.5,0.7), ambient=0.2, specular=0.5)
         self.plotter.camera.reset_clipping_range()
         
         self.plotter.key_press_event_signal.connect(self.process_key_press_event)
