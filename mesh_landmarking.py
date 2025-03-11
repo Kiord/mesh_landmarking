@@ -287,7 +287,7 @@ def positional_to_barycentric(mesh, landmarks):
 @click.option('-b', '--barycentric', is_flag=True, type=bool, help='If present, landmarks are saved in barycentric format.')
 def cli(mesh_path, landmarks_path, nb_landmarks, barycentric):
     print_keys()
-    mesh = tm.load(mesh_path, process=False)
+    mesh = tm.load(mesh_path, process=False, maintain_order=True)
     if os.path.exists(landmarks_path):
         landmarks = np.load(landmarks_path)
     else:
